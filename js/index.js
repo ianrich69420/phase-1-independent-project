@@ -17,6 +17,7 @@ function getAnime(anime){
                     <div class="col-6">
                         <img class="card-img" src="${anime.img}" id="anime-image">_
                         <p id="rating">Rating: <span id="rate-count">0</span> / 5</p>
+                        <p id="what-rating"> What score out of 5 do you think the anime should get?</p>
                         <button type="button" class="btn btn-dark" id="oneoutoffive">1</button>
                         <button type="button" class="btn btn-dark" id="twooutoffive">2</button>
                         <button type="button" class="btn btn-dark" id="threeoutoffive">3</button>

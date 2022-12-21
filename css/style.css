@@ -9,6 +9,12 @@
     right: 50%;
 }
 
+#what-rating {
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+}
+
 #oneoutoffive {
     position: absolute;
     bottom: 0;
