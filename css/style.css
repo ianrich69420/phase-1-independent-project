@@ -1,6 +1,11 @@
-#anime-image{
+#anime-image {
     height: 328px;
     width: 225px;
+}
+
+.btn {
+    border-color: red;
+    color: white;
 }
 
 #rating {
