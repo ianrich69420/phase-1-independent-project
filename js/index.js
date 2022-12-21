@@ -5,7 +5,6 @@ function fetchAnimes(){
 }
 
 function getAnime(anime){
-    let rateCount = 0
     anime.forEach(anime => {
         let card = document.createElement('li')
         card.innerHTML = `
@@ -13,14 +12,9 @@ function getAnime(anime){
         <div class="row">
             <div class="card col-12">
                 <div class="row">
-                    <div class="col-9">
+                    <div class="col-6">
                         <img class="card-img" src="${anime.img}" id="anime-image">_
-                        <button type="button" class="btn btn-dark" id="oneoutoffive">1</button>
-                        <button type="button" class="btn btn-dark" id="secondoutoffive">2</button>
-                        <button type="button" class="btn btn-dark" id="threeoutoffive">3</button>
-                        <button type="button" class="btn btn-dark" id="fouroutoffive">4</button>
-                        <button type="button" class="btn btn-dark" id="fiveoutoffive">5</button>
-                        <p>Rating: <span id="rating">${rateCount}</span></p> 
+                        <p id="rating">Rating: <span>0</span></p> 
                     </div>
                     <div class="col-6 card-body">
                         <h5 class="card-title" id="${anime.title.text}">${anime.title.text}</h5>
@@ -33,6 +27,7 @@ function getAnime(anime){
         </div>
         `
         document.querySelector('body').appendChild(card)
+        
     })
 }
 
