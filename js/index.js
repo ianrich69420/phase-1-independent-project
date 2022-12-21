@@ -5,8 +5,6 @@ function fetchAnimes(){
 }
 
 function getAnime(anime){
-    let rateCount = 0
-    let numberOfRatings = 0
     anime.forEach(anime => {
         let card = document.createElement('li')
         card.innerHTML = `
@@ -16,7 +14,7 @@ function getAnime(anime){
                 <div class="row">
                     <div class="col-6 text-white bg-dark text-opacity-40">
                         <img class="card-img" src="${anime.img}" id="anime-image">_
-                        <p id="rating">Current Average Rating: <span id="rate-count">0</span> / 5</p>
+                        <p id="rating">Current Average Rating: <span id="rate-count">${anime.rateCount}</span> / 5</p>
                         <p id="what-rating"> What score out of 5 do you think the anime should get?</p>
                         <button type="button" class="btn btn-outline-light" id="oneoutoffive">1</button>
                         <button type="button" class="btn btn-outline-light" id="twooutoffive">2</button>
@@ -35,38 +33,38 @@ function getAnime(anime){
         </div>
         `
         card.querySelector('#oneoutoffive').addEventListener('click', () => {
-            rateCount += 1
-            ++numberOfRatings             
-            card.querySelector('#rate-count').textContent = rateCount
-            card.querySelector('#rate-count').textContent /= numberOfRatings
+            anime.rateCount += 1
+            ++anime.numberOfRatings             
+            card.querySelector('#rate-count').textContent = anime.rateCount
+            card.querySelector('#rate-count').textContent /= anime.numberOfRatings
             card.querySelector('#rate-count').textContent = Math.round(card.querySelector('#rate-count').textContent * 10) / 10
         })
         card.querySelector('#twooutoffive').addEventListener('click', () => {
-            rateCount += 2
-            ++numberOfRatings            
-            card.querySelector('#rate-count').textContent = rateCount
-            card.querySelector('#rate-count').textContent /= numberOfRatings
+            anime.rateCount += 2
+            ++anime.numberOfRatings            
+            card.querySelector('#rate-count').textContent = anime.rateCount
+            card.querySelector('#rate-count').textContent /= anime.numberOfRatings
             card.querySelector('#rate-count').textContent = Math.round(card.querySelector('#rate-count').textContent * 10) / 10
         })
         card.querySelector('#threeoutoffive').addEventListener('click', () => {
-            rateCount += 3
-            ++numberOfRatings             
-            card.querySelector('#rate-count').textContent = rateCount
-            card.querySelector('#rate-count').textContent /= numberOfRatings
+            anime.rateCount += 3
+            ++anime.numberOfRatings             
+            card.querySelector('#rate-count').textContent = anime.rateCount
+            card.querySelector('#rate-count').textContent /= anime.numberOfRatings
             card.querySelector('#rate-count').textContent = Math.round(card.querySelector('#rate-count').textContent * 10) / 10
         })
         card.querySelector('#fouroutoffive').addEventListener('click', () => {
-            rateCount += 4
-            ++numberOfRatings             
-            card.querySelector('#rate-count').textContent = rateCount
-            card.querySelector('#rate-count').textContent /= numberOfRatings
+            anime.rateCount += 4
+            ++anime.numberOfRatings             
+            card.querySelector('#rate-count').textContent = anime.rateCount
+            card.querySelector('#rate-count').textContent /= anime.numberOfRatings
             card.querySelector('#rate-count').textContent = Math.round(card.querySelector('#rate-count').textContent * 10) / 10
         })
         card.querySelector('#fiveoutoffive').addEventListener('click', () => {
-            rateCount += 5
-            ++numberOfRatings            
-            card.querySelector('#rate-count').textContent = rateCount
-            card.querySelector('#rate-count').textContent /= numberOfRatings
+            anime.rateCount += 5
+            ++anime.numberOfRatings            
+            card.querySelector('#rate-count').textContent = anime.rateCount
+            card.querySelector('#rate-count').textContent /= anime.numberOfRatings
             card.querySelector('#rate-count').textContent = Math.round(card.querySelector('#rate-count').textContent * 10) / 10
         })
         document.querySelector('body').appendChild(card)
