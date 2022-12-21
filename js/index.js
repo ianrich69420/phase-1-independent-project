@@ -1,5 +1,5 @@
 function fetchAnimes(){
-    fetch("http://localhost:3000/animes")
+    fetch("https://ianrich69420.github.io/phase-1-independent-project/db.json")
     .then(res => res.json())
     .then(json => getAnime(json))
 }
