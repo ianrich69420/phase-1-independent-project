@@ -12,29 +12,29 @@
 #oneoutoffive {
     position: absolute;
     bottom: 0;
-    left: 225px;
+    right: 70%;
 }
 
 #twooutoffive {
     position: absolute;
     bottom: 0;
-    left: 275px;
+    right: 65%;
 }
 
 #threeoutoffive {
     position: absolute;
     bottom: 0;
-    left: 325px;
+    right: 60%;
 }
 
 #fouroutoffive {
     position: absolute;
     bottom: 0;
-    left: 375px;
+    right: 55%;
 }
 
 #fiveoutoffive {
     position: absolute;
     bottom: 0;
-    left: 425px;
+    right: 50%;
 }
