@@ -3,11 +3,6 @@
     width: 225px;
 }
 
-.btn {
-    border-color: red;
-    color: white;
-}
-
 #rating {
     position: absolute;
     top: 0;
