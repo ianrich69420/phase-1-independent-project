@@ -1,7 +1,7 @@
 function fetchAnimes(){
     fetch("https://ianrich69420.github.io/phase-1-independent-project/db.json")
     .then(res => res.json())
-    .then(json => getAnime(json))
+    .then(json => getAnime(json.animes))
 }
 
 function getAnime(anime){
