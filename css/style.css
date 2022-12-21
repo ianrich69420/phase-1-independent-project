@@ -8,3 +8,33 @@
     top: 0;
     right: 50%;
 }
+
+#oneoutoffive {
+    position: absolute;
+    bottom: 0;
+    left: 225px;
+}
+
+#twooutoffive {
+    position: absolute;
+    bottom: 0;
+    left: 275px;
+}
+
+#threeoutoffive {
+    position: absolute;
+    bottom: 0;
+    left: 325px;
+}
+
+#fouroutoffive {
+    position: absolute;
+    bottom: 0;
+    left: 375px;
+}
+
+#fiveoutoffive {
+    position: absolute;
+    bottom: 0;
+    left: 425px;
+}
