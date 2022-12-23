@@ -3,16 +3,29 @@
     width: 225px;
 }
 
-#rating {
+li#anime {
+    list-style-type: none;  
+}
+
+#rate-counter {
     position: absolute;
     top: 0;
     right: 50%;
+    font-size: 1.65em;
+}
+
+#rating {
+    position: absolute;
+    bottom: 15%;
+    right: 50%;
+    font-size: 1.65em;
 }
 
 #what-rating {
     position: absolute;
     bottom: 10%;
     right: 50%;
+    font-size: 1.05em;
 }
 
 #oneoutoffive {
