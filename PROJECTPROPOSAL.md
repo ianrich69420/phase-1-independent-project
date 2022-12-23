@@ -1,4 +1,4 @@
-# Project: AniReviews!
+# Project: AniReviews! (By Ian Orieko)
 
 This is a website that rates different animes in it's database
 
