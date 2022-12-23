@@ -4,11 +4,11 @@ This is a website that rates different animes in it's database
 
 ## MVP Features
 
-- Display of a list of animes
+- Login feature to authenticate the vote of a user
 
-- A rating system out of 5 for each anime
+- Search for an anime within the list of animes
 
-- Feature for users to rate the anime
+- Add an anime to the list
 
 ## User Stories
 
