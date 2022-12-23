@@ -22,12 +22,18 @@ function getAnime(anime){
                         <img class="card-img" src="${anime.img}" id="anime-image">_
                         <p id="rating">Current Average Rating: <span id="vote-count">${anime.vote_count}</span> / 5</p>
                         <p id="rate-counter">Current Vote Count: <span id="rate-count">${anime.number_of_ratings}</span> votes</p>
-                        <p id="what-rating"> What score out of 5 do you think the anime should get?</p>
+                        <p id="what-rating">What score out of 5 do you think the anime should get?</p>
+                        <p id="authenticate-rating">Authenticate your rating!</p>
                         <button type="button" class="btn btn-outline-light" id="oneoutoffive">1</button>
                         <button type="button" class="btn btn-outline-light" id="twooutoffive">2</button>
                         <button type="button" class="btn btn-outline-light" id="threeoutoffive">3</button>
                         <button type="button" class="btn btn-outline-light" id="fouroutoffive">4</button>
                         <button type="button" class="btn btn-outline-light" id="fiveoutoffive">5</button>
+                        <form id="authenticationForm">
+                            <input type="email" class="form-control" placeholder="Email" id="email"><br>
+                            <input type="password" class="form-control" placeholder="Password" id="password"><br>
+                            <button class="btn btn-outline-info ms-1" id="authenticationBtn">Authenticate</button>
+                        </form>
                     </div>
                     <div class="col-6 card-body">
                         <h5 class="card-title" id="${anime.title.text}">${anime.title.text}</h5>

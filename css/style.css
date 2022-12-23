@@ -3,20 +3,42 @@
     width: 225px;
 }
 
+#email, #password {
+    width: 200px;
+}
+
+#email {
+    position: absolute;
+    top: 12.5%;
+    right: 50%;
+}
+
+#password {
+    position: absolute;
+    top: 27.5%;
+    right: 50%;
+}
+
+#authenticationBtn {
+    position: absolute;
+    top: 42.5%;
+    right: 50%;
+}
+
 li#anime {
     list-style-type: none;  
 }
 
 #rate-counter {
     position: absolute;
-    top: 0;
+    top: 55%;
     right: 50%;
     font-size: 1.65em;
 }
 
 #rating {
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
     right: 50%;
     font-size: 1.65em;
 }
@@ -26,6 +48,13 @@ li#anime {
     bottom: 10%;
     right: 50%;
     font-size: 1.05em;
+}
+
+#authenticate-rating {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    font-size: 1.65em;
 }
 
 #oneoutoffive {
