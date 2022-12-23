@@ -16,10 +16,35 @@
           <a class="navbar-brand text-light">AniReviews!</a>
           <a class="navbar-brand text-light">Rate Your Favourite And Least Favorite Animes!</a>
           <form class="d-flex" id="searchForm">
-            <input class="form-content" type="text" placeholder="Search For An Anime To Rate" id="search">
+            <input class="form-control" type="text" placeholder="Search For An Anime To Rate" id="search">
             <button class="btn btn-outline-info ms-1" id="searchBtn">SEARCH</button>
           </form>
       </div>
   </nav>
+  <div class="container-fluid bg-dark">
+    <a class="navbar-brand text-light">Add an anime of your own to rate!</a>
+    <form id="addAnimeForm">
+      <div class="mb-3">
+        <br>
+        <input class="form-control" placeholder="Anime Studio" id="add_studio">
+      </div>
+      <div class="mb-3">
+        <input class="form-control" placeholder="Anime Genre" id="add_genre">
+      </div>
+      <div class="mb-3">
+        <input class="form-control" placeholder="Anime Image" id="add_image">
+      </div>
+      <div class="mb-3">
+        <input class="form-control" placeholder="Anime Description" id="add_description">
+      </div>
+      <div class="mb-3">
+        <input class="form-control" placeholder="Anime Title" id="add_title">
+      </div>
+      <div class="mb-3">
+        <input class="form-control" placeholder="Anime Start Date" id="add_start_date">
+      </div>
+      <button type="submit" class="btn btn-outline-info ms-1">Submit</button>
+    </form>
+  </div>
   </body>
 </html>

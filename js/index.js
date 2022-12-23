@@ -9,6 +9,27 @@ document.querySelector('#searchForm').addEventListener('submit', (e) => {
     location.href = `#${e.target.search.value}`
 })
 
+document.querySelector('#addAnimeForm').addEventListener('submit', (e) => {
+    e.preventDefault()
+    let animeObj = [
+        {
+            studio: e.target.add_studio.value,
+            genres: [
+                e.target.add_genre.value
+            ],
+            img: e.target.add_image.value,          
+            description: e.target.add_description.value,
+            title: {
+                text: e.target.add_title.value
+            },
+            start_date: e.target.add_start_date.value,
+            vote_count: 0,
+            number_of_ratings: 0
+        }
+    ]
+    getAnime(animeObj)
+})
+
 function getAnime(anime){
     anime.forEach(anime => {
         let card = document.createElement('li')
@@ -19,7 +40,7 @@ function getAnime(anime){
             <div class="card col-12">
                 <div class="row">
                     <div class="col-6 text-white bg-dark text-opacity-40">
-                        <img class="card-img" src="${anime.img}" id="anime-image">_
+                        <img class="card-img" src="${anime.img}" alt="${anime.title.text}" id="anime-image">_
                         <p id="rating">Current Average Rating: <span id="vote-count">${anime.vote_count}</span> / 5</p>
                         <p id="rate-counter">Current Vote Count: <span id="rate-count">${anime.number_of_ratings}</span> votes</p>
                         <p id="what-rating">What score out of 5 do you think the anime should get?</p>
