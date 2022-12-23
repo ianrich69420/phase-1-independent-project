@@ -12,6 +12,12 @@ In this project is a website in which a user can:
 
 - As a user I should be able to rate the Anime and receive a message that my rating has been logged and see a change in rating depending on whether my rating affects the average.
 
+- Login feature to authenticate the vote of a user
+
+- Search for an anime within the list of animes
+
+- Add an anime to the list
+
 ## Project Setup
 
 In order for you to use the content on this repo ensure you have the following:
