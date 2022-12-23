@@ -28,6 +28,7 @@ document.querySelector('#addAnimeForm').addEventListener('submit', (e) => {
         }
     ]
     getAnime(animeObj)
+    alert('Anime added! Search for the title in the searchbar!')
 })
 
 function getAnime(anime){
